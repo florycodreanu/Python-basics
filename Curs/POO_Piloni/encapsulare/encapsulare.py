@@ -23,7 +23,7 @@ Pentru a putea modifica atributele de tip protected, ne folosim de conceptele de
 """
 
 
-class Casa_encapsulare_setter_getter_deleter:
+class CasaEncapsulareSetterGetterDeleter:
     _numar_etaje = None
     numar_camere = None
     numar_bai = None
@@ -81,7 +81,7 @@ class Casa_encapsulare_setter_getter_deleter:
 
 
 if __name__ == "__main__":
-    garsoniera = Casa_encapsulare_setter_getter_deleter(0, 1, 1, "beton", 40, "Strada Lalelelor 23")
+    garsoniera = CasaEncapsulareSetterGetterDeleter(0, 1, 1, "beton", 40, "Strada Lalelelor 23")
     print(garsoniera._numar_etaje)
     print(garsoniera.get_materiale_constructie())
 
@@ -89,7 +89,7 @@ if __name__ == "__main__":
     print("===========================")
 
 
-class Casa_encapsulare_decoratori:
+class CasaEncapsulareDecoratori:
     # decorator = elemente care modifica comportamentul unei functii
     _numar_etaje = None
     numar_camere = None
@@ -149,7 +149,7 @@ class Casa_encapsulare_decoratori:
 
 
 if __name__ == "__main__":
-    garsoniera = Casa_encapsulare_decoratori(0, 1, 1, "beton", 40, "Strada Lalelelor 23")
+    garsoniera = CasaEncapsulareDecoratori(0, 1, 1, "beton", 40, "Strada Lalelelor 23")
     print(f"materiale de constructie returnate prin getter inainte de update: {garsoniera.materiale_constructie}")
     # apelare getter
     garsoniera.materiale_constructie = "caramida"  # setter
