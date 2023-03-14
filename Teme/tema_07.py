@@ -86,3 +86,6 @@ cerc.raza = 8
 print(f'Noua raza dupa schimbare este: {cerc.raza}')
 del cerc.raza
 print(f'Am sters valoarea laturii care acum este: {cerc.raza}')
+
+
+# lik github - https://github.com/florycodreanu/QAA
