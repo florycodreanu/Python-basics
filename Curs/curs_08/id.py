@@ -25,6 +25,6 @@ chrome.maximize_window()
 chrome.get("https://formy-project.herokuapp.com/form")  # putem deschide un site
 chrome.find_element(By.ID, "first-name").send_keys("Florentina")
 chrome.find_element(By.ID, "last-name").send_keys("Codreanu")
-time.sleep(3)
+time.sleep(10)
 chrome.quit()  # inchide toata instanta browserului
 # chrome.close() -> inchide un singur tab (cel activ) din instanta de browser
