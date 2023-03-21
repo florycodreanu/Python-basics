@@ -33,15 +33,22 @@ chrome.find_element(By.CSS_SELECTOR, "input[placeholder='Enter last name']").sen
 time.sleep(2)
 # am facut cautare dupa clasa
 chrome.find_elements(By.CSS_SELECTOR, ".form-control")[2].send_keys("Tester")
+
+# extragere text din pagina folosind CSS punctul 5/6 din comentarii
 text_label_last_name = chrome.find_element(By.CSS_SELECTOR, "strong > label[for='last-name']").text
 assert text_label_last_name == "Last name", f"Error, Expected - Last name - , Actual: {text_label_last_name}"
+# cautare element dupa criteriile5 9
 chrome.find_element(By.CSS_SELECTOR, "div.input-group>div:nth-of-type(2) input").click()
+# cautare eleent dupa criteriile 5-8
 chrome.find_element(By.CSS_SELECTOR, "div.input-group>div:last-of-type input").click()
+
 education_label = chrome.find_element(By.CSS_SELECTOR, "div.input-group>div:first-of-type label").text
 assert education_label == "Highest level of education", \
     f"Error, expected:Highest level of education, Actual {education_label}"
+
 college_education = chrome.find_element(By.CSS_SELECTOR, "div.input-group>div:nth-of-type(3)").text
 assert college_education == "College", f"Error: Expected: College, actual {college_education}"
+
 chrome.find_element(By.CSS_SELECTOR,
                     "div.form-group > div:nth-of-type(2) > strong + input").send_keys("following sibling")
 time.sleep(1)
