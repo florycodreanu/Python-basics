@@ -32,3 +32,4 @@ class ContextMenu(softest.TestCase):
         self.soft_assert(self.assertEqual, text, "You selected a context menu", "Error, text is incorrect")
         alert.accept()
         time.sleep(2)
+

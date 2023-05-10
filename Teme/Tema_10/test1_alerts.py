@@ -10,7 +10,7 @@ Orice clasa de teste trebuie sa mosteneasca clasa TestCase si sa aiba urmatoarel
 
 import softest
 # Folosim libraria softest pentru a nu opri rularea tuturor testelor dintr-o suita
-# In omentul rularii daca un test pica este marcat ca si failed si trece mai departe la celelalte teste fara a se opri.
+# In momentul rularii daca un test pica este marcat ca si failed si trece mai departe la celelalte teste fara a se opri.
 
 
 from selenium import webdriver
